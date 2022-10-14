@@ -1,8 +1,0 @@
-*{padding:0;margin:0;box-sizing:border-box;}
-.expenseitem{background-color:rgb(181, 130, 254);border:2px solid black;padding:10px;margin:10px;border-radius:10px;display:flex; gap:30px;}
-.date{flex:1;position:relative; }
-.date p{position: absolute; top:0;right:0;left:0;bottom:0;margin:auto;height:fit-content;font-weight:bold}
-.title{flex:4;color:white;position:relative;}
-.title h2{position: absolute; top:0;right:0;left:0;bottom:0;margin:auto;height:fit-content}
-.price{flex:1;padding:10px;background-color:rgb(34, 6, 218);color:white;font-weight:bold;border:3px solid white;}
- 

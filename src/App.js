@@ -1,21 +1,20 @@
+import React from 'react';
 import logo from './logo.svg';
-import ExpenseItem from './Components/ExpenseItem';
+import ExpenseItem from './Components/Expense/Expense';
 import './App.css';
 
-function App() {
+const App = () => {
   const item=[
-    {title:"Wifi",price:199.00,date:"October 20 2020"},
-    {title:"Food",price:99.00,date:"October 26 2020"},
-    {title:"Travel",price:205.00,date:"November 22 2020"},
-    {title:"Ticket",price:300.00,date:"December 10 2020"},
+      {title:"Wifi",price:"199.00", date:new Date(2022, 2, 17) },
+      {title:"Food",price:"99.00", date:new Date(2022, 5, 27)},
+      {title:"Travel",price:"205.00", date:new Date(2022, 1, 15)},
+      {title:"Ticket",price:"300.00", date:new Date(2022, 6, 2)},
   ]
+  
   return (
     <div className="App">
       <h1>React Expense List</h1>
-      <ExpenseItem title={item[0].title} price={item[0].price} date={item[0].date}></ExpenseItem>
-      <ExpenseItem title={item[1].title} price={item[1].price} date={item[1].date}></ExpenseItem>
-      <ExpenseItem title={item[2].title} price={item[2].price} date={item[2].date}></ExpenseItem>
-      <ExpenseItem title={item[3].title} price={item[3].price} date={item[3].date}></ExpenseItem>
+      <ExpenseItem item={item} />
     </div>
   );
 }
